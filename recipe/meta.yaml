@@ -43,7 +43,7 @@ test:
     - test -e $PREFIX/lib/libffi.a                                 # [not win]
     - test -e $PREFIX/include/ffi.h                                # [not win]
     - test -e $PREFIX/include/ffitarget.h                          # [not win]
-    - if not exist %LIBRARY_PREFIX%/bin/ffi-7.dll exit /b 1        # [win]
+    - if not exist %LIBRARY_PREFIX%/bin/ffi-8.dll exit /b 1        # [win]
     - if not exist %LIBRARY_PREFIX%/lib/libffi.lib exit /b 1       # [win]
     - if not exist %LIBRARY_PREFIX%/lib/ffi.lib exit /b 1       # [win]
     - if not exist %LIBRARY_PREFIX%/include/ffi.h exit /b 1        # [win]
