@@ -12,7 +12,6 @@ source:
   sha256: 0acbca9fd9c0eeed7e5d9460ae2ea945d3f1f3d48e13a4c54da12c7e0d23c313
   patches:   # [win]
     # Windows-specific:
-    - 0001-x86-MSVC-does-not-support-Complex-type.patch                # [win]
     - 0002-Don-t-define-FFI_COMPLEX_TYPEDEF-ifndef-FFI_TARGET_H.patch  # [win]
 
 build:
