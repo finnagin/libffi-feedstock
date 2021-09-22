@@ -11,6 +11,7 @@ configure_args=(
     --disable-dependency-tracking
     --prefix="${PREFIX}"
     --includedir="${PREFIX}/include"
+    --disable-exec-static-tramp
 )
 
 if [[ "$target_platform" != win-* ]]; then
