@@ -30,7 +30,7 @@ if [[ "$target_platform" == linux* ]]; then
 fi
 
 ./configure "${configure_args[@]}" || { cat config.log; exit 1;}
-if [[ "$target_platform" == win-64 ]]; then
+if [[ "$target_platform" == win-64 || "$target_platform" == win-arm64 ]]; then
   pushd x86_64-pc-mingw64
     patch_libtool
     sed -i.bak 's/|-fuse-ld/|-Xclang|-fuse-ld/g' libtool
@@ -44,6 +44,6 @@ make install
 # This overlaps with libgcc-ng:
 rm -rf ${PREFIX}/share/info/dir
 
-if [[ "$target_platform" == win-64 ]]; then
+if [[ "$target_platform" == win-64 || "$target_platform" == win-arm64 ]]; then
   mv $PREFIX/lib/ffi.dll.lib $PREFIX/lib/libffi.dll.lib
 fi
