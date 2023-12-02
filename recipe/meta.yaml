@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/libffi/libffi/releases/download/v{{ version }}/libffi-{{ version }}.tar.gz
-  sha256: 540fb721619a6aba3bdeef7d940d8e9e0e6d2c193595bc243241b77ff9e93620
+  sha256: D66C56AD259A82CF2A9DFC408B32BF5DA52371500B84745F7FB8B645712DF676
   patches:
     - 0001-arm64-use-a-dedicated-dylib-for-trampolines-so-it-ca.patch
     - 0002-Add-support-for-ffi_find_closure_for_code_np-on-Appl.patch
