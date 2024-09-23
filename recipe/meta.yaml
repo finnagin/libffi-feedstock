@@ -24,7 +24,6 @@ build:
 
 requirements:
   build:
-    - autotools_clang_conda              # [win]
     - make                               # [unix]
     - autoconf                           # [unix]
     - libtool                            # [unix]
